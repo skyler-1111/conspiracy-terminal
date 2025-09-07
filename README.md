@@ -11,7 +11,7 @@ This is a silly lil site I made cuz I was bored. So long story short this is a s
 **serious.//** → drops somewhat crazy but kinda makes sense theories | if you type this command once then generate, serious mode gets switched on. If you type .serious// again after the generated theory, it gets turned off. For eg:
 
 
-<img width="1147" height="230" alt="image" src="https://github.com/user-attachments/assets/327e5004-1541-4828-99d4-00454cc4b959" />
+<img width="1120" height="230" alt="image" src="https://github.com/user-attachments/assets/4d596a9a-31a3-4ae4-a85b-9cf7fb8e84a5" />
 
 
 
