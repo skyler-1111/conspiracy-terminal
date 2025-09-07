@@ -27,7 +27,10 @@ This is a silly lil site I made cuz I was bored. So long story short this is a s
 cuz we already got 6 million todo apps, let’s make something unserious.  
 
 ## Example 
-<img width="1144" height="320" alt="image" src="https://github.com/user-attachments/assets/8fab1b7f-ebff-4148-b661-ae3430f5a99c" />
+
+
+<img width="1136" height="270" alt="image" src="https://github.com/user-attachments/assets/3319e1e2-a2a1-4194-8a30-4347279d9701" />
+
 
 ## How to use
 1. double click `conspiracy.html`  
