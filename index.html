@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>     
+  <meta charset="UTF-8">
+  <title>Illuminati Terminal</title>
+  <style>
+    body {
+      background: url(./bg.jpg) no-repeat center center fixed;
+      background-size: cover;
+      color: #e0d7ff;
+      font-family: "Courier New", monospace;
+      padding: 20px;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #terminal {
+      width: 90%;
+      max-width: 900px;
+      margin: 30px auto;
+      background: rgba(20, 0, 40, 0.7);
+      border: 2px solid #aa88ff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #a0ffdd;
+      height: 80vh;
+      overflow-y: auto;
+    }
+    .line {
+      margin: 4px 0;
+      text-shadow: 0 0 6px #bb99ff;
+    }
+    .command {
+      color: #ffcc00;
+      font-weight: bold;
+    }
+    .ascii {
+      color: #00ffcc;
+      margin-top: 8px;
+      white-space: pre;
+      text-shadow: 0 0 6px #00ffcc;
+    }
+    #input-line {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    #prompt {
+      color: #ffcc00;
+      margin-right: 8px;
+    }
+    input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-family: inherit;
+      font-size: 1em;
+      flex: 1;
+    }
+    /* Ascend animation */
+    #ascend {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(10,0,20,0.95);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 2s;
+      color: #ffcc00;
+      font-size: 2em;
+      text-shadow: 0 0 20px #ffcc00;
+    }
+    #ascend.show {
+      opacity: 1;
+      pointer-events: auto;
+      animation: pulse 2s infinite alternate;
+    }
+    @keyframes pulse {
+      from { text-shadow: 0 0 15px #ffcc00; }
+      to { text-shadow: 0 0 40px #ff6600; }
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal">
+    <div class="line">Illuminati OS v6.6.6 ✧ Access Restricted ✧</div>
+    <div class="line">Type <span class="command">help</span> for commands.</div>
+    <div id="output"></div>
+    <div id="input-line">
+      <span id="prompt">&gt;</span>
+      <input type="text" id="commandInput" autofocus>
+    </div>
+  </div>
+
+
+  <div id="ascend">
+    <div>👁️△👁️</div>
+    <div>You are ascending...</div>
+    <div>The Pyramid Accepts You</div>
+  </div>
+
+
+  <script>
+    const output = document.getElementById("output");
+    const input = document.getElementById("commandInput");
+    const ascendScreen = document.getElementById("ascend");
+
+
+    let seriousMode = false;
+
+
+    // Word pools (playful mode)
+    const subjects = ["Owls","Bananas","Wi-Fi routers","Dreams","TikTok dances","Toasters","Clouds","Cats","Area 51 vending machines","AI","birds","bananas"];
+    const verbs = ["are secretly","were invented to","are controlled by","exist only because of","are hypnotizing humans with","are secretly controlling","exist only to","are a distraction from","channel energy into","are secretly powered by","were planted by","are monitored through","vibrate in sync with","were designed to brainwash","cover up the existence of"];
+    const objects = ["lizard people","5G towers","the Illuminati","AI overlords","shadow governments","alien motherships","big soda","underground mole people","alien WiFi signals","reptilian overlords","flat-earthers","a hidden 25th hour of the day","sentient cheese","time travelers","quantum ducks","ancient TikTok dances","forbidden Doritos flavors","the ghost of Nikola Tesla","dream-harvesting corporations"];
+    const extras = ["to harvest brainwaves.","to distract you from the Bermuda Triangle.","because reality is an unpaid DLC.","to stop cats from revealing the matrix.","inside volcanoes since 1984."];
+
+
+    // Serious mode word banks
+    const seriousSubjects = [
+      "Time zones","Elections","Language itself","The calendar","The stock market",
+      "GPS satellites","Dreams","History textbooks","Facial recognition",
+      "School curriculums","Weather forecasts","Artificial intelligence models",
+      "CCTV cameras","Social media trends","Maps","National anthems",
+      "Pharmaceutical trials","Public holidays","Wi-Fi routers","Prison systems"
+    ];
+
+
+    const seriousVerbs = [
+      "were engineered to","exist mainly to","were rewritten to","were designed so that",
+      "are manipulated to","secretly regulate","were invented as a cover for",
+      "quietly train people to","systematically erase","reshape human perception to"
+    ];
+
+
+    const seriousObjects = [
+      "make populations easier to govern","synchronize labor obedience",
+      "prevent collective memory from forming","condition humans for compliance",
+      "hide mass data experiments","fracture cultural continuity",
+      "mask astronomical alignments","maintain economic cycles",
+      "standardize thought patterns","blur the boundary of truth and fiction",
+      "test predictive models of society","limit awareness of parallel realities",
+      "redirect resistance into safe channels","erase traces of pre-modern systems"
+    ];
+
+
+    const seriousTwists = [
+      "so no generation ever truly realizes it.",
+      "to prevent uprisings before they happen.",
+      "because uncoordinated humans are ungovernable.",
+      "and the evidence is hidden in plain sight.",
+      "which is why history keeps repeating itself.",
+      "so reality feels natural, not manufactured.",
+      "and this is the reason you never question it.",
+      "to make freedom indistinguishable from control.",
+      "and nobody alive remembers the world before."
+    ];
+
+
+    const revealLines = [
+      "The pyramid watches you 👁️△👁️",
+      "The truth is out there, but so are the lizard people.",
+      "Remember: the moon landing was staged by owls.",
+      "The Wi-Fi routers are listening to your thoughts.",
+      "Bananas are the key to unlocking the secrets of the universe.",
+      "Cats are actually government spies sent to monitor your dreams.",
+      "The Illuminati controls the stock market through TikTok dances.",
+      "Owls are the true rulers of the world, manipulating events from the shadows.",
+      "The secret to immortality lies in the Bermuda Triangle.",
+      "Fishes are actually CIA agents who live in Antarctica disguised as lizards."
+    ];
+
+
+    const asciiArt = ["👁️△👁️","( ͡👁️ ͜ʖ ͡👁️)","/\\/\\ UFO /\\/\\","🐦 = 🤖","𓂀"];
+
+
+    function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+
+    function generateConspiracy() {
+      if (seriousMode) {
+        const s = pickRandom(seriousSubjects);
+        const v = pickRandom(seriousVerbs);
+        const o = pickRandom(seriousObjects);
+        const t = pickRandom(seriousTwists);
+        return `${s} ${v} ${o} ${t}`;
+      } else {
+        return `${pickRandom(subjects)} ${pickRandom(verbs)} ${pickRandom(objects)} ${pickRandom(extras)}`;
+      }
+    }
+
+
+    function printLine(text, isAscii=false) {
+      const line = document.createElement("div");
+      line.className = "line";
+      line.innerText = text;
+      if (isAscii) line.className += " ascii";
+      output.appendChild(line);
+      output.scrollTop = output.scrollHeight;
+    }
+
+
+    function clearTerminal() { output.innerHTML = ""; }
+
+
+    function shuffleArray(arr) { return arr.sort(() => Math.random() - 0.5); }
+
+
+    function revealLinesOneByOne() {
+      let shuffled = shuffleArray([...revealLines]);
+      let i = 0;
+      function next() {
+        if (i < shuffled.length) {
+          printLine(shuffled[i]);
+          i++;
+          setTimeout(next, 800);
+        }
+      }
+      next();
+    }
+
+
+    function handleCommand(cmd) {
+      if (!cmd) return;
+      printLine("> " + cmd, false);
+
+
+      switch (cmd.toLowerCase()) {
+        case "help":
+          printLine("Commands: generate, truth.exe, reveal, ascend, clear, .serious//, help");
+          break;
+        case "generate":
+          printLine(generateConspiracy());
+          printLine(pickRandom(asciiArt), true);
+          break;
+        case "truth.exe":
+          printLine("Decrypting forbidden knowledge...");
+          setTimeout(() => printLine(generateConspiracy()), 800);
+          break;
+        case "reveal":
+          revealLinesOneByOne();
+          break;
+        case "ascend":
+          ascendScreen.classList.add("show");
+          setTimeout(() => { ascendScreen.classList.remove("show"); }, 6000);
+          break;
+        case "clear":
+          clearTerminal();
+          break;
+        case ".serious//":
+          seriousMode = !seriousMode;
+          printLine("Serious mode: " + (seriousMode ? "ON" : "OFF"));
+          break;
+        default:
+          printLine("Unknown command. Type 'help'.");
+      }
+    }
+
+
+    input.addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        handleCommand(input.value.trim());
+        input.value = "";
+      }
+    });
+  </script>
+</body>
+</html>
+
+
