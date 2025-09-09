@@ -3,7 +3,7 @@
 This is a silly lil site I made cuz I was bored. So long story short this is a silly random conspiracy generator, which has some commands for you to run to generate one.
 > half of the conspiracies generated are delulu and stupid, so dont't take this seriously lol.
 
-heres the link:https://skyler-1111.github.io/conspiracy-terminal/
+heres the link: https://skyler-1111.github.io/conspiracy-terminal/
 
 
 ## Commands
