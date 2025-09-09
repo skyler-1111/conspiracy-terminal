@@ -40,3 +40,6 @@ cuz we already got 6 million todo apps, let’s make something unserious.
 - this site gaslights u on purpose  
 - funded by plankton from sea  
 - and yes, it lies more than yo ex   
+
+
+btw heres the link to the website: https://skyler-1111.github.io/conspiracy-terminal/
