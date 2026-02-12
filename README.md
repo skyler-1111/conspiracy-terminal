@@ -2,6 +2,8 @@
 this is nothing other than a random, silly conspiracy generator terminal lol.
 
 so basically there are some commands to use this which you can get by typing 'help' in the terminal, but I'm gonna write it here for reference :)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 1. **generate**
    This command generates the theories. It only contains the non serious ones. for eg:
    
@@ -27,6 +29,6 @@ so basically there are some commands to use this which you can get by typing 'he
 
 8. **help**
    Shows all the commands in the terminal.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 have fun :p
