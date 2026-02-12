@@ -1,4 +1,3 @@
-// Ensure DOM elements are available before accessing them
 document.addEventListener("DOMContentLoaded", () => {
   const output = document.getElementById("output");
   const input = document.getElementById("commandInput");
@@ -23,13 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
     "☼"
   ];
 
-  /* ------------------ SILLY DATABASE ------------------ */
+  /* ------------------ silly databasee------------------ */
 
   const subjects = ["Quantum Physics","Owls","Bananas","Wi-Fi routers","Dreams","TikTok dances","Toasters","Clouds","Cats","Area 51 vending machines","AI","birds"];
   const verbs = ["are secretly","were invented to","are controlled by","exist only because of","are hypnotizing humans with","are secretly controlling","exist only to","are a distraction from","channel energy into","are secretly powered by","were planted by","are monitored through","vibrate in sync with","were designed to brainwash","cover up the existence of"];
   const objects = ["lizard people","5G towers","the Illuminati","AI overlords","shadow governments","Molloch","alien motherships","big soda","underground mole people","alien WiFi signals","reptilian overlords","flat-earthers","a hidden 25th hour of the day","sentient cheese","time travelers","quantum ducks","ancient TikTok dances","forbidden Doritos flavors","the ghost of Nikola Tesla","dream-harvesting corporations"];
 
-  /* ------------------ SERIOUS DATABASE ------------------ */
+  /* ------------------ serious database ------------------ */
 
   const seriousSubjects = [
     "Time zones","Elections","Language itself","The calendar",
@@ -71,13 +70,13 @@ document.addEventListener("DOMContentLoaded", () => {
     "The pattern held."
   ];
 
-  /* ------------------ UTIL ------------------ */
+  /* util */
 
   function getRandom(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
-  /* ------------------ GENERATOR ------------------ */
+  /* GENERATOR  */
 
   function generateConspiracy() {
     truthLevel++;
@@ -116,23 +115,21 @@ document.addEventListener("DOMContentLoaded", () => {
       : `${subject} ${verb} ${object}`;
   }
 
-  /* ------------------ VISUAL ESCALATION ------------------ */
 
   function updateUI() {
 
-    // Subtle tonal shift
+
     if (truthLevel > 7 && terminal) {
       terminal.style.borderColor = "#9f88ff";
       terminal.style.boxShadow = "0 0 18px #8888ff";
     }
 
-    // Slight desaturation + calmer tone
+ 
     if (truthLevel > 12) {
       document.body.style.filter = "saturate(0.9)";
       if (terminal) terminal.style.color = "#d8d0ff";
     }
 
-    // Mild unease, not cringe
     if (truthLevel > 18 && terminal) {
       terminal.style.letterSpacing = "0.5px";
 
@@ -144,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  /* ------------------ OUTPUT ------------------ */
 
   function printLine(text) {
     if (!output) return;
@@ -168,7 +164,6 @@ document.addEventListener("DOMContentLoaded", () => {
     generatedCount++;
   }
 
-  /* ------------------ COMMAND HANDLER ------------------ */
 
   function handleCommand(cmd) {
     if (!cmd) return;
@@ -223,7 +218,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  /* ------------------ INPUT ------------------ */
 
   if (input) {
     input.addEventListener("keydown", (e) => {
@@ -237,4 +231,5 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", () => {
     if (input) input.focus();
   });
+
 });
