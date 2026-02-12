@@ -1,0 +1,62 @@
+body {
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #e0d7ff;
+  font-family: "Courier New", monospace;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#terminal {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  background: rgba(20, 0, 40, 0.7);
+  border: 2px solid #aa88ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px #373738;
+  height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.line {
+  margin: 4px 0;
+  text-shadow: 0 0 6px #bb99ff;
+}
+
+.command {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.ascii {
+  color: #00ffcc;
+  margin-top: 8px;
+  white-space: pre;
+  text-shadow: 0 0 6px #00ffcc;
+}
+
+#input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#prompt {
+  color: #ffcc00;
+  margin-right: 8px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1em;
+  flex: 1;
+}
