@@ -1,5 +1,6 @@
 # conspiracy-terminal
 this is nothing other than a random, silly conspiracy generator terminal lol.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 so basically there are some commands to use this which you can get by typing 'help' in the terminal, but I'm gonna write it here for reference :)
 
