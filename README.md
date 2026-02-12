@@ -1,2 +1,2 @@
 # conspiracy-terminal
-this a lil thing i coded cuz i bored, read the readme.md for more info.
+this is nothing other than a random, silly conspiracy generator terminal lol.
