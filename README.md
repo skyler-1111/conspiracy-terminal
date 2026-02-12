@@ -27,3 +27,6 @@ so basically there are some commands to use this which you can get by typing 'he
 
 8. **help**
    Shows all the commands in the terminal.
+
+
+have fun :p
