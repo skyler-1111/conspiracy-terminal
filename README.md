@@ -13,6 +13,8 @@ it can get slightly serious.
 
 no backend. no actual lizard people.
 
+Built using html, css and javascript.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **COMMANDS**
@@ -52,7 +54,7 @@ Shows all the commands in the terminal.
    
 7. **ascend**
 
-Triggers the 'ascension' like animation. To end this, hit ESC on your keyboard, and for mobile/tab users, click anywhere     on the screen. 
+Triggers the 'ascension' like animation. To end this, hit ESC on your keyboard, and for mobile/tab users, click anywhere  on the screen. 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
