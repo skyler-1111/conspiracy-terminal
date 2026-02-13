@@ -34,7 +34,7 @@ so basically there are some commands to use this which you can get by typing 'he
    Shows all the commands in the terminal.
    
 10. **ascend**
-   Triggers a very cool 'ascension' like animation.
+   Triggers a very cool 'ascension' like animation. To end this, hit ESC on your keyboard, and for mobile/tab users, click anywhere on the screen. 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 have fun :p
