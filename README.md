@@ -23,7 +23,7 @@ no backend. no actual lizard people.
    
    <img width="571" height="75" alt="image" src="https://github.com/user-attachments/assets/a8a1e5f4-2ef0-4321-bb8c-fbe63a7558a5" />
 
-3. **.serious//**
+2. **.serious//**
 
    Toggles serious mode.
    This reduces the goofy outputs and uses more structured vocabulary (still random and fictional).
@@ -32,25 +32,25 @@ no backend. no actual lizard people.
 
    note: dont forget to type the generate command too after .serious//. to turn it off, type .serious// again.
 
-5. **clear**
+3. **clear**
 
    Clears the console.
 
-7. **truth.exe**
+4. **truth.exe**
 
    Generates additional structured statements and pushes the system further.
 
    <img width="838" height="103" alt="image" src="https://github.com/user-attachments/assets/ad3e4741-826e-4e8b-b35d-41d39cbfa1b0" />
 
-9. **reveal**
+5. **reveal**
 
     Reveals a block of statements.
 
-11. **help**
+6. **help**
 
 Shows all the commands in the terminal.
    
-13. **ascend**
+7. **ascend**
 
 Triggers the 'ascension' like animation. To end this, hit ESC on your keyboard, and for mobile/tab users, click anywhere     on the screen. 
 
