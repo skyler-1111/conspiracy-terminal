@@ -3,7 +3,7 @@ this is a random, silly conspiracy generator in terminal form.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-what is this?
+- what is this?
 
 just a browser-based fake terminal that spits out absurd conspiracy theories.
 
