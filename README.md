@@ -8,7 +8,7 @@ what is this?
 just a browser-based fake terminal that spits out absurd conspiracy theories.
 
 it starts goofy.
-it can get dumb-serious.
+it can get slightly serious.
 you can ascend if you feel dramatic.
 
 no backend. no actual lizard people.
@@ -18,12 +18,13 @@ no backend. no actual lizard people.
 **COMMANDS**
 
 1. **generate**
-   This command generates the theories. It only contains the non serious ones. for eg:
+   This command generates the theories. It only uses the non serious word set to do so. for eg:
    
    <img width="571" height="75" alt="image" src="https://github.com/user-attachments/assets/a8a1e5f4-2ef0-4321-bb8c-fbe63a7558a5" />
 
 3. **.serious//**
-   Turn 'serious' mode on. Gives you less non-serious ones and with more vocabs (still silly and random af) . for eg:
+   Toggles serious mode.
+   This reduces the goofy outputs and uses more structured vocabulary (still random and fictional).
    
    <img width="855" height="126" alt="image" src="https://github.com/user-attachments/assets/70ea3bbc-561e-4a90-bb0b-ffd74f50702f" />
 
@@ -33,18 +34,18 @@ no backend. no actual lizard people.
     Clears the console.
 
 5. **truth.exe**
-   Generates some random ahh stuff.
+   Generates additional structured statements and pushes the system further.
 
    <img width="838" height="103" alt="image" src="https://github.com/user-attachments/assets/ad3e4741-826e-4e8b-b35d-41d39cbfa1b0" />
 
 7. **reveal**
-   Reveals a block of stuffs.
+   Reveals a block of statements.
 
 8. **help**
    Shows all the commands in the terminal.
    
 10. **ascend**
-   Triggers a very cool 'ascension' like animation. To end this, hit ESC on your keyboard, and for mobile/tab users, click anywhere on the screen. 
+   Triggers the 'ascension' like animation. To end this, hit ESC on your keyboard, and for mobile/tab users, click anywhere     on the screen. 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-have fun :p
+have fun :)
