@@ -8,7 +8,9 @@ what is this?
 just a browser-based fake terminal that spits out absurd conspiracy theories.
 
 it starts goofy.
+
 it can get slightly serious.
+
 no backend. no actual lizard people.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
