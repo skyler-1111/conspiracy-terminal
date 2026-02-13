@@ -5,13 +5,13 @@ this is a random, silly conspiracy generator in terminal form.
 
 - what is this?
 
-just a browser-based fake terminal that spits out absurd conspiracy theories.
+  just a browser-based fake terminal that spits out absurd conspiracy theories.
 
-it starts goofy.
+  it starts goofy.
 
-it can get slightly serious.
+  it can get slightly serious.
 
-no backend. no actual lizard people.
+  no backend. no actual lizard people.
 
 - Built using html, css and javascript.
 
