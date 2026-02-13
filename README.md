@@ -9,8 +9,6 @@ just a browser-based fake terminal that spits out absurd conspiracy theories.
 
 it starts goofy.
 it can get slightly serious.
-you can ascend if you feel dramatic.
-
 no backend. no actual lizard people.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
