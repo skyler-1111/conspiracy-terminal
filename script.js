@@ -24,27 +24,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ------------------ silly databasee------------------ */
 
-  const subjects = ["Quantum Physics","Owls","Bananas","Wi-Fi routers","Dreams","TikTok dances","Toasters","Clouds","Cats","Area 51 vending machines","AI","birds"];
-  const verbs = ["are secretly","were invented to","are controlled by","exist only because of","are hypnotizing humans with","are secretly controlling","exist only to","are a distraction from","channel energy into","are secretly powered by","were planted by","are monitored through","vibrate in sync with","were designed to brainwash","cover up the existence of"];
-  const objects = ["lizard people","5G towers","the Illuminati","AI overlords","shadow governments","Molloch","alien motherships","big soda","underground mole people","alien WiFi signals","reptilian overlords","flat-earthers","a hidden 25th hour of the day","sentient cheese","time travelers","quantum ducks","ancient TikTok dances","forbidden Doritos flavors","the ghost of Nikola Tesla","dream-harvesting corporations"];
+  const subjects = ["Quantum Physics", "Owls", "Bananas", "Wi-Fi routers", "Dreams", "TikTok dances", "Toasters", "Clouds", "Cats", "Area 51 vending machines", "AI", "birds"];
+  const verbs = ["are secretly", "were invented to", "are controlled by", "exist only because of", "are hypnotizing humans with", "are secretly controlling", "exist only to", "are a distraction from", "channel energy into", "are secretly powered by", "were planted by", "are monitored through", "vibrate in sync with", "were designed to brainwash", "cover up the existence of"];
+  const objects = ["lizard people", "5G towers", "the Illuminati", "AI overlords", "shadow governments", "Molloch", "alien motherships", "big soda", "underground mole people", "alien WiFi signals", "reptilian overlords", "flat-earthers", "a hidden 25th hour of the day", "sentient cheese", "time travelers", "quantum ducks", "ancient TikTok dances", "forbidden Doritos flavors", "the ghost of Nikola Tesla", "dream-harvesting corporations"];
 
   /* ------------------ serious database ------------------ */
 
   const seriousSubjects = [
-    "Time zones","Elections","Language itself","The calendar",
-    "The stock market","GPS satellites","History textbooks",
-    "Facial recognition","School curriculums","Weather forecasts",
-    "Architectural grids","Digital timestamps","Search engine rankings",
-    "Behavioral analytics","Terms and conditions agreements",
-    "Census databases","Algorithmic recommendations"
+    "Time zones", "Elections", "Language itself", "The calendar",
+    "The stock market", "GPS satellites", "History textbooks",
+    "Facial recognition", "School curriculums", "Weather forecasts",
+    "Architectural grids", "Digital timestamps", "Search engine rankings",
+    "Behavioral analytics", "Terms and conditions agreements",
+    "Census databases", "Algorithmic recommendations"
   ];
 
   const seriousVerbs = [
-    "were engineered to","exist mainly to","were rewritten to",
-    "are manipulated to","secretly regulate",
-    "quietly restructure","gradually normalize",
-    "statistically reinforce","predict and pre-empt",
-    "reshape perception toward","subconsciously anchor belief in",
+    "were engineered to", "exist mainly to", "were rewritten to",
+    "are manipulated to", "secretly regulate",
+    "quietly restructure", "gradually normalize",
+    "statistically reinforce", "predict and pre-empt",
+    "reshape perception toward", "subconsciously anchor belief in",
     "convert curiosity into"
   ];
 
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
       terminal.style.boxShadow = "0 0 18px #8888ff";
     }
 
- 
+
     if (truthLevel > 12) {
       document.body.style.filter = "saturate(0.9)";
       if (terminal) terminal.style.color = "#d8d0ff";
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     switch (cmd.toLowerCase()) {
 
       case "help":
-        printLine("Commands: generate, truth.exe, reveal, clear, .serious//, help");
+        printLine("Commands: generate, truth.exe, reveal, clear, .serious//, ascend, help");
         break;
 
       case "generate":
@@ -208,6 +208,32 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         break;
 
+      case "ascend":
+        truthLevel = 100;
+        updateUI();
+
+        setTimeout(() => {
+          const overlay = document.getElementById("ascension-overlay");
+          if (overlay) overlay.classList.add("active");
+        }, 2000);
+
+        const ascensionSteps = [
+          "Initiating ascension sequence...",
+          ".𖥔 ݁ ˖ִ ࣪⚝₊ ⊹˚",
+          "Cognitive limiters: ⋆˖⁺‧₊☽◯☾₊‧⁺˖⋆",
+          "transliminalism achieved."
+        ];
+
+        ascensionSteps.forEach((step, i) => {
+          setTimeout(() => {
+            printLine(step);
+            if (i === ascensionSteps.length - 1) {
+              printGenerated(generateConspiracy());
+            }
+          }, i * 1200);
+        });
+        break;
+
       case ".serious//":
         seriousMode = !seriousMode;
         printLine("Serious mode: " + (seriousMode ? "ON" : "OFF"));
@@ -231,5 +257,23 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("click", () => {
     if (input) input.focus();
   });
+
+  const overlay = document.getElementById("ascension-overlay");
+
+  // Close on Escape key (PC)
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && overlay && overlay.classList.contains("active")) {
+      overlay.classList.remove("active");
+    }
+  });
+
+  // Close on Click (Mobile/Tablet)
+  if (overlay) {
+    overlay.addEventListener("click", () => {
+      if (overlay.classList.contains("active")) {
+        overlay.classList.remove("active");
+      }
+    });
+  }
 
 });
