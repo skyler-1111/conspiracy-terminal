@@ -1,11 +1,21 @@
 # conspiracy-terminal
-this is nothing other than a random, silly conspiracy generator terminal lol.
+this is a random, silly conspiracy generator in terminal form.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-so basically there are some commands to use this which you can get by typing 'help' in the terminal, but I'm gonna write it here for reference :)
+what is this?
+
+just a browser-based fake terminal that spits out absurd conspiracy theories.
+
+it starts goofy.
+it can get dumb-serious.
+you can ascend if you feel dramatic.
+
+no backend. no actual lizard people.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**COMMANDS**
 
 1. **generate**
    This command generates the theories. It only contains the non serious ones. for eg:
